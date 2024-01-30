@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="cal-style.css">
+</head>
+<body>
+		<div class="container">
+			<div class="calculator" id="cal">
+				
+					<div class="calculator-theme" onclick="toggleTheme()">
+    					<img src="moon.svg" id="themeIcon" class="icon"> 
+					</div>
+
+
+					<div class="display">
+						<div id="display2">
+							<textarea type="text" id="display" name="display" placeholder="0" readonly dir="rtl"></textarea>
+						</div>
+					</div>
+					
+
+					<div class="buttons">
+						<table>
+							<tr>
+								<td><button class="btn-op" onclick="clearDisplay()" id="clear">AC</button></td>
+								
+								<td><button class="btn-op" onclick="appendValue('/')" id="/">&divide;</button></td>
+								
+								<td><button class="btn-op" onclick="appendValue('*')" id="*">&times;</button></td>
+								<td><button class="btn-op" onclick="backspace()" id="backspace">CE</button></td>
+								
+							</tr>
+							<tr>
+								<td><button class="btn-num" id="7" onclick="appendValue('7')">7</button></td>
+								<td><button class="btn-num" id="8" onclick="appendValue('8')">8</button></td>
+								<td><button class="btn-num" id="9" onclick="appendValue('9')">9</button></td>
+								<td><button class="btn-op" id="-" onclick="appendValue('-')">-</button></td>
+							</tr>
+							<tr>
+								<td><button class="btn-num" id="4" onclick="appendValue('4')">4</button></td>
+								<td><button class="btn-num" id="5" onclick="appendValue('5')">5</button></td>
+								<td><button class="btn-num" id="6" onclick="appendValue('6')">6</button></td>
+								<td><button class="btn-op" id="+" onclick="appendValue('+')">+</button></td>
+
+							</tr>
+							<tr>
+								<td><button class="btn-num" id="1" onclick="appendValue('1')">1</button></td>
+								<td><button class="btn-num" id="2" onclick="appendValue('2')">2</button></td>
+								<td><button class="btn-num" id="3" onclick="appendValue('3')">3</button></td>
+								<td rowspan="3"><button class="btn-eq" id="equal" onclick="calResult()">=</button></td>
+								
+								
+							</tr>
+							<tr>
+								<td class="two"><button class="btn-op" id="(" onclick="appendValue('(')">(</button></td>
+								<td><button class="btn-num" id="0" onclick="appendValue('0')">0</button></td>
+								<td><button class="btn-op" id="." onclick="appendValue(')')">)</button></td>
+								
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			
+
+
+				function appendValue(value)
+				{
+					display.value += value;
+				}
+				function clearDisplay()
+				{
+					display.value = '';
+				}
+				function backspace()
+				{
+					let currenInput = display.value;
+					display.value = currenInput.slice(0,-1);
+				}
+				
+				function calResult()
+				{
+					try
+					{
+						display.value +=   '\n' + eval(display.value);
+					}
+					catch(error)
+					{
+						display.value = 'Invalid Format';
+					}
+				}
+		</script>
+</body>
+</html>
