@@ -1,0 +1,292 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+}
+header
+{
+    position: fixed;
+    padding-left: 60px;
+    color: white;
+    background-color: maroon;
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+}
+header h1
+{
+    padding-top: 20px;
+    display: inline-block;
+}
+.nav-bar
+{
+    padding-top: 15px;
+    float: right;
+    margin-top: 18px;
+
+}
+.nav-bar ul
+{
+    list-style: none;
+    margin-right: 100px;
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.nav-bar a:hover
+{
+    text-decoration: overline;
+    transition:  ease-in-out 0.7s;
+}
+.nav-btn
+{
+    background-color:  maroon;
+    font-family: Times New Roman;
+    border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.nav-btn:hover
+{
+     box-shadow: 0 12px 16px 0 rgba(255, 165, 0, 0.24), 0 17px 50px 0 rgba(255, 165, 0, 0.19);
+
+}
+.nav-btn a:active
+{
+    text-decoration: overline;
+    color: black;
+
+}
+
+.nav-bar li
+{
+    display: inline-block;
+}
+.content
+{
+    padding-top: 150px;
+    height: 450px;
+}
+.content .image 
+{
+    background-image: url(pizza3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100%;
+    float: right;
+    height: 400px;
+    width: 500px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+
+}
+.content .image:hover
+{
+   transition: ease 0.7s;
+   transition-timing-function: ease-in-out;
+    height: 400px;
+    width: 600px;
+}
+
+.content h1 , h2
+{
+    color: white;
+    margin-left: 170px;
+    font-size: 50px;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+     background-color: maroon;
+     padding-left: 40px;
+
+}
+.content p
+{
+    color: white;
+    margin-left: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.content a
+{
+    text-decoration: none;
+    color: white;
+    font-family: Times New Roman;
+    font-size: 14px;
+}
+.btn
+{
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-left: 140px;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 20px;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.btn:hover
+{
+    background-color: red;
+    transition: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div.menu {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: rgb(255, 176, 170);
+  margin-left: 50px;
+  display: inline-block;
+}
+div.menu:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(255, 165, 0, 0.24), 0 17px 50px 0 rgba(255, 165, 0, 0.19);
+
+}
+.menu img
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.menus
+{
+    background-color: #f4f4f4;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.menus h2
+{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 0px !important;
+    margin-right: 170px;
+}
+.menu-list span
+{
+    display: block;
+    color: maroon; 
+    font-size: 14px; 
+    margin-top: 5px; 
+    display: inline-block;
+    font-weight: 600;
+}
+.menu-list
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-list hr
+{
+    border: 2px solid maroon;
+    width: 80px; 
+    margin: 5px 0;
+    margin-left: 40px; 
+    display: inline-block;
+    margin-right: 30px;
+}
+.about-section
+{
+    background-color: rgb(253, 210, 130);
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.about img
+{
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+.about-content
+{
+    float: right;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 120px;
+} 
+.about-content h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-section
+{
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+.contact-form h2
+{
+    margin-left: 0px !important;
+    margin-right: 170px;
+    margin-bottom: 20px;
+}
+.contact-form
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label
+{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #3498db; 
+    background-color: rgba(128, 128, 128, 0.5);
+    border: none;
+    color: black; 
+    font-style: italic;
+}
+
+.contact-form button
+{
+    background-color: maroon;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.contact-form button:hover {
+    background-color: orange;
+    font-weight: 600;
+}
+footer
+{
+    height: 70px;
+}
+footer p{
+    margin-top: 30px;
+    margin-left: 30px;
+}
